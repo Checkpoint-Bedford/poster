@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Bedford Support Awareness Poster</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -11,6 +12,7 @@
     padding: 40px;
     color: #000000;
   }
+
   .poster {
     max-width: 900px;
     margin: auto;
@@ -19,6 +21,7 @@
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   }
+
   h1 {
     text-align: center;
     color: #000000;
@@ -26,27 +29,30 @@
     margin-bottom: 20px;
     font-weight: 600;
   }
+
   h2 {
     color: #000000;
     margin-top: 30px;
     font-weight: 600;
   }
+
+  .stat-box, .highlight {
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+  }
+
   .stat-box {
     background: #e8f0ff;
     border-left: 6px solid #0057b7;
-    padding: 15px 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-    font-size: 1.1rem;
   }
+
   .highlight {
     background: #ffe6f7;
     border-left: 6px solid #ff4fc3;
-    padding: 15px 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-    font-size: 1.1rem;
   }
+
   .qr-section {
     background: #f5e9ff;
     padding: 30px 20px;
@@ -55,6 +61,7 @@
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
+
   .qr-placeholder {
     width: 160px;
     height: 160px;
@@ -68,13 +75,16 @@
     font-weight: 600;
     letter-spacing: 1px;
   }
+
   .image-row {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 30px 0;
+    gap: 10px;
   }
+
   .image-box {
-    width: 32%;
+    flex: 1;
     height: 140px;
     background: #e3e3e3;
     border-radius: 10px;
@@ -84,6 +94,35 @@
     color: #555;
     font-size: 0.9rem;
   }
+
+  /* --- Mobile Responsiveness --- */
+  @media (max-width: 600px) {
+
+    body {
+      padding: 15px;
+    }
+
+    .poster {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .image-row {
+      flex-direction: column;
+    }
+
+    .image-box {
+      width: 100%;
+      height: 150px;
+    }
+
+    .stat-box, .highlight {
+      font-size: 1rem;
+    }
+  }
 </style>
 </head>
 <body>
@@ -91,11 +130,10 @@
     <h1>Do People in Bedford Know Where to Access Support?</h1>
 
     <h2>What We Found:</h2>
-    <div class="stat-box">2 out of 3 residents didn’t know where their nearest walk‑in health clinic is.</div>
+    <div class="stat-box">2 out of 3 residents didn’t know where their nearest walk-in health clinic is.</div>
     <div class="stat-box">Most people reported they don’t have many areas to access support in Bedford.</div>
     <div class="stat-box">Over half didn’t know about local organisations such as<br>Recovery Lounge Bedford, King’s Arm Project, and Job Centre Plus.</div>
 
-    <!-- Images under blue stat boxes -->
     <div class="image-row">
       <div class="image-box">Image 1</div>
       <div class="image-box">Image 2</div>
@@ -105,12 +143,12 @@
     <h2>Why This Matters</h2>
     <div class="highlight">
       We thought - What’s the point in having support organisations if people don’t even know they exist?<br><br>
-      Instead of adding another organisation to the noise, we’ve built a simple and effective way to raise awareness of what’s already available — from mental wellbeing to employment support, health services, and homelessness support.
+      Instead of adding another organisation to the noise, we’ve built a simple and effective way to raise awareness of what’s already available — from mental wellbeing to employment support, health services, and homelessness support.
     </div>
 
     <div class="qr-section">
       <h2>Our solution: A Map!</h2>
-      <p>Scan to view our colour‑coded map of bedford highlighting help centres, wellbeing hubs, youth development areas, outdoor wellbeing spaces and local services — plus phone numbers!</p>
+      <p>Scan to view our colour-coded map of bedford highlighting help centres, wellbeing hubs, youth development areas, outdoor wellbeing spaces and local services — plus phone numbers!</p>
       <div class="qr-placeholder">QR CODE</div>
     </div>
   </div>
