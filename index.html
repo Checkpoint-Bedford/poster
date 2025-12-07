@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Bedford Support Awareness Poster</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
   body {
     font-family: 'Poppins', sans-serif;
@@ -34,13 +35,15 @@
     color: #000000;
     margin-top: 30px;
     font-weight: 600;
+    font-size: 1.6rem;
   }
 
   .stat-box, .highlight {
-    padding: 15px 20px;
-    margin: 15px 0;
+    padding: 18px 22px;
+    margin: 16px 0;
     border-radius: 10px;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    line-height: 1.55;
   }
 
   .stat-box {
@@ -63,8 +66,8 @@
   }
 
   .qr-placeholder {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     background: #d9c2ff;
     border-radius: 10px;
     margin: 20px auto 0;
@@ -73,7 +76,6 @@
     justify-content: center;
     color: #4b0082;
     font-weight: 600;
-    letter-spacing: 1px;
   }
 
   .image-row {
@@ -92,22 +94,39 @@
     align-items: center;
     justify-content: center;
     color: #555;
-    font-size: 0.9rem;
   }
 
-  /* --- Mobile Responsiveness --- */
+  /* ----------------------- */
+  /*     STRONGER MOBILE     */
+  /* ----------------------- */
   @media (max-width: 600px) {
 
     body {
-      padding: 15px;
-    }
-
-    .poster {
       padding: 20px;
     }
 
+    .poster {
+      padding: 24px;
+    }
+
+    /* Bigger text */
     h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p, .stat-box, .highlight {
+      font-size: 1.15rem;
+      line-height: 1.6;
+    }
+
+    /* Prevent tiny text shrink */
+    * {
+      font-size-adjust: 0.55;
     }
 
     .image-row {
@@ -116,15 +135,19 @@
 
     .image-box {
       width: 100%;
-      height: 150px;
+      height: 160px;
+      font-size: 1rem;
     }
 
-    .stat-box, .highlight {
-      font-size: 1rem;
+    .qr-placeholder {
+      width: 200px;
+      height: 200px;
+      font-size: 1.1rem;
     }
   }
 </style>
 </head>
+
 <body>
   <div class="poster">
     <h1>Do People in Bedford Know Where to Access Support?</h1>
@@ -142,15 +165,16 @@
 
     <h2>Why This Matters</h2>
     <div class="highlight">
-      We thought - What’s the point in having support organisations if people don’t even know they exist?<br><br>
+      We thought—what’s the point in having support organisations if people don’t even know they exist?<br><br>
       Instead of adding another organisation to the noise, we’ve built a simple and effective way to raise awareness of what’s already available — from mental wellbeing to employment support, health services, and homelessness support.
     </div>
 
     <div class="qr-section">
       <h2>Our solution: A Map!</h2>
-      <p>Scan to view our colour-coded map of bedford highlighting help centres, wellbeing hubs, youth development areas, outdoor wellbeing spaces and local services — plus phone numbers!</p>
+      <p>Scan to view our colour-coded map of Bedford highlighting help centres, wellbeing hubs, youth development areas, outdoor wellbeing spaces and local services — plus phone numbers!</p>
       <div class="qr-placeholder">QR CODE</div>
     </div>
   </div>
 </body>
 </html>
+
